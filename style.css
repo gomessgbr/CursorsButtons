@@ -42,7 +42,19 @@ button {
 .loading {
   cursor: wait;
 }
+.loading > img {
+  animation: spin 700ms infinite linear;
+}
 
 .movable {
   cursor: crosshair;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
