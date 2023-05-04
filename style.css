@@ -43,7 +43,7 @@ button {
   cursor: wait;
 }
 .loading > img {
-  animation: spin 700ms infinite linear;
+  animation: spin 1500ms infinite linear;
 }
 
 .movable {
