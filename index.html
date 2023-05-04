@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Cursores e butões</title>
+    <title>Cursores e botões</title>
   </head>
-  <body></body>
+  <body>
+    <section class="buttons-types">
+      <div class="title">
+        <h1>Tipos de botão</h1>
+        <p>
+          Dentro de um layout, botões servem para destacar ações importantes a
+          serem tomadas.
+        </p>
+        <p>Acompanhe abaixo um exemplo dde tipos e propriedades</p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <td></td>
+            <td>Botão Primario</td>
+            <td>Botão Secundario</td>
+            <td>Botão Terciário</td>
+            <td>Cursor</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>default</td>
+            <td><button class="primary">default primary</button></td>
+            <td><button class="secondary">default secondary</button></td>
+            <td><button class="tertiary">default tertiary</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>hover</td>
+            <td><button class="primary">Hover primary</button></td>
+            <td><button class="secondary">Hover secondary</button></td>
+            <td><button class="tertiary">Hover tertiary</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>focus</td>
+            <td><button class="primary focus">Focus primary</button></td>
+            <td><button class="secondary focus">Focus secondaary</button></td>
+            <td><button class="tertiary focus">Focus tertiary</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>disabled</td>
+            <td><button class="primary" disabled>disable primary</button></td>
+            <td>
+              <button class="secondary" disabled>disable secondary</button>
+            </td>
+            <td><button class="tertiary" disabled>disable tertiary</button></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>loading</td>
+            <td>
+              <button class="primary loading">
+                <img src="./assets/loading.svg" alt="" /> Loading primary
+              </button>
+            </td>
+            <td>
+              <button class="secondary loading">
+                <img src="./assets/loading.svg" alt="" /> Loading secundary
+              </button>
+            </td>
+            <td>
+              <button class="tertiary loading">
+                <img src="./assets/loading.svg" alt="" /> Loading tertiary
+              </button>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>movable</td>
+            <td>
+              <button class="primary movable">
+                <img src="./assets/reorder-three.svg" alt="" /> Movable primary
+              </button>
+            </td>
+            <td>
+              <button class="secondary movable">
+                <img src="./assets/reorder-three.svg" alt="" /> Movable
+                secondaary
+              </button>
+            </td>
+            <td>
+              <button class="tertiary movable">
+                <img src="./assets/reorder-three.svg" alt="" /> Movable tertiary
+              </button>
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="buttons-test">
+      <div class="title">
+        <h1>Teste os botões</h1>
+        <p>
+          Interaja com os botões e observe a mudança de aparência e de cursores
+        </p>
+      </div>
+      <div class="buttons-area">
+        <button>Interaja Comigo</button>
+        <button>Interaja Comigo</button>
+        <button>Interaja Comigo</button>
+      </div>
+    </section>
+  </body>
 </html>
