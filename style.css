@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+table {
+  background-color: #0b0911;
+  color: #fff;
+}
+
 button {
   display: flex;
   align-items: center;
@@ -23,6 +28,16 @@ button {
 
   color: #fff;
 }
+button:focus {
+  outline: 2px solid rgba(217, 205, 247, 1);
+}
+button:disabled {
+  opacity: 0.56;
+  cursor: not-allowed;
+}
+.focus {
+  outline: 2px solid rgba(217, 205, 247, 1);
+}
 
 .primary {
   background-color: #8257e5;
@@ -31,14 +46,10 @@ button {
 .primary:hover {
   background-color: #9674e5;
 }
-
 .primary:disabled {
-  opacity: 0.56;
-  cursor: not-allowed;
+  background-color: #8257e5;
 }
-.primary:focus {
-  outline: 2px solid rgba(217, 205, 247, 1);
-}
+
 .loading {
   cursor: wait;
 }
@@ -48,6 +59,21 @@ button {
 
 .movable {
   cursor: crosshair;
+}
+
+.secondary {
+  background-color: #3c3748;
+}
+.secondary:hover {
+  background-color: #6a617f;
+}
+
+.secondary:disabled {
+  background-color: #6a617f;
+}
+
+.tertiary {
+  background-color: transparent;
 }
 
 @keyframes spin {
